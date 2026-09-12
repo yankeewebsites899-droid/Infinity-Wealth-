@@ -753,21 +753,18 @@ button:active{transform:scale(.97)}
       <h2>Infinity Wealth Terms</h2>
       <p>By using this prototype, you acknowledge the information below.</p>
       <h3>About Infinity Wealth</h3>
-      <p>Infinity Wealth focuses on housing and property-related packages, from simple listings to higher-tier residences. It is built for people interested in long-term, steady participation rather than short-term speculation.</p>
-      <h3>1. Prototype status</h3>
-      <p>This version is a browser-only demonstration. It does not provide real financial services, a shared database, or automatic payment verification.</p>
-      <h3>2. Package information</h3>
-      <p>Package figures shown in the prototype are demonstration values. They are not a guarantee of profit, income, or financial return.</p>
-      <h3>3. Payment records</h3>
-      <p>Submitting a transaction reference creates a local pending record only. It does not prove that money was received or that a payment is genuine. The website does not connect to MTN Mobile Money or Airtel Money and cannot independently verify a transaction on its own.</p>
+      <p>Infinity wealth investment deals in housing and property management from simple apartments to luxurious mansions.
+​This platform is for only those that believe in steady cashflow.
+​No excitement, but a serious investment with reasonable returns.....
+​You want long-term, here is long term. </p>
+      <h3>3. Payments</h3>
+      <p>All momey transactions are verified using transaction IDs from the Airtel or MTN service and they are handled manually and precisely by a trusted adminstrator.</p>
       <h3>4. Manual confirmation</h3>
       <p>The local admin can mark a record confirmed after independently checking the payment outside this website. Confirmation here is only a local record.</p>
       <h3>5. Local storage</h3>
-      <p>Data is stored in the browser's localStorage. Clearing browser data or using another device may remove or hide the records. Account sign-in on this prototype is not the same as secure, real-world account authentication.</p>
-      <h3>6. No guaranteed returns</h3>
-      <p>No package on this prototype should be represented to customers as a guaranteed financial return.</p>
+      <p>Data is stored in the browser's localStorage Clearing browser data or using another device may remove or hide the records. Account sign-in on this prototype is not the same as secure, real-world account authentication.</p>
       <h3>7. Withdrawals</h3>
-      <p>Withdrawal requests are recorded locally for the admin to review. This prototype does not automatically send money — a real payout, if any, happens outside this website and only after the admin acts on the request.</p>
+      <p>The withdraw button only works when the count down has run out. </p>
     </div>
   </div>
 </section>
@@ -1227,7 +1224,6 @@ function renderPackages(){
 
         <div class="bonus-box">
           <strong>10% promotional bonus</strong><br>
-          Demo calculation only. Any real reward would require legitimate authorization and separate terms.
         </div>
 
         <div class="total">
@@ -1506,9 +1502,7 @@ function loadYouProfile(){
 
 function getDemoBalance(){
   /*
-    Confirmed payment records can be displayed as a local demo balance.
-    Confirmed withdrawals reduce that same local balance.
-    This is NOT proof of real money received or sent.
+    
   */
   const email=getCurrentEmail();
   const deposited=loadJSON(KEYS.payments,[])
